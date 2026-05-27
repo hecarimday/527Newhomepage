@@ -1,23 +1,30 @@
-<div class="header">
-  <div class="container">
-    <h1 class="logo">
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="{{ site.baseurl }}/" class="site-header__logo">
       <img src='{{ "/assets/img/연구실 로고/nlp_logo5_black.png" | prepend: site.baseurl }}' alt="NLPLab logo"/>
-      <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-    </h1>
-    <nav class="nav-collapse">
-      <ul class="noList">
+      <span>{{ site.title }}</span>
+    </a>
+    <button class="site-nav__toggle" id="navToggle" aria-label="메뉴">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="siteNav">
+      <ul>
         {% for link in site.navigation %}
-          <li class="element {% if page.url contains link.url %}current{% endif %}">
-            <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+          <li>
+            <a href="{{ link.url | prepend: site.baseurl }}"
+               {% if page.url contains link.url %}class="active"{% endif %}>
+              {{ link.title }}
+            </a>
           </li>
         {% endfor %}
-        <li class="element mobile-only-link">
-          <a href="{{ site.social.github }}" target="_blank">GitHub</a>
-        </li>
-        <li class="element mobile-only-link">
-          <a href="{{ site.social.apply }}" target="_blank">Apply</a>
-        </li>
       </ul>
     </nav>
   </div>
-</div>
+</header>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    document.getElementById('siteNav').classList.toggle('open');
+    this.classList.toggle('open');
+  });
+</script>
