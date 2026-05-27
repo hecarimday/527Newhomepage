@@ -6,82 +6,93 @@ title: NLPLAB
 <!-- Hero -->
 <section class="hero-section">
   <div class="container">
-    <h1 class="hero-title">Natural Language Processing Lab<br>@ Sungkyunkwan University</h1>
+    <p class="hero-label">Sungkyunkwan University · AI Department</p>
+    <h1 class="hero-title">Natural Language<br>Processing Lab</h1>
     <p class="hero-desc">
-      성균관대학교 인공지능학과 자연어처리 연구실은 대화 시스템, 질의응답, 정보 검색, 생성형 AI, 텍스트 마이닝 등
-      다양한 NLP 기술 연구를 통해 AI의 접근성을 높이고 더 나은 삶을 위한 인공지능 기술 발전에 기여합니다.
+      대화 시스템, 질의응답, 정보 검색, 생성형 AI, 텍스트 마이닝 등 다양한 NLP 기술 연구를 통해
+      AI의 접근성을 높이고 더 나은 삶을 위한 인공지능 기술 발전에 기여합니다.
     </p>
-    <div class="hero-links">
-      <a href="/AboutUs/Introduction/">About Us →</a>
-      <a href="/Publications/AllPapers/">Publications →</a>
-      <a href="/Members/">Members →</a>
-      <a href="{{ site.social.apply }}" target="_blank">Join Us →</a>
+    <div class="hero-actions">
+      <a href="/AboutUs/Introduction/" class="btn-primary">About Us</a>
+      <a href="/Publications/AllPapers/" class="btn-secondary">Publications</a>
+      <a href="{{ site.social.apply }}" target="_blank" class="btn-secondary">Join Us</a>
     </div>
   </div>
 </section>
 
-<!-- Research Focus -->
-<section class="modern-section">
+<hr class="section-divider">
+
+<!-- Research -->
+<section class="lab-section">
   <div class="container">
-    <div class="section-header">
-      <h2 class="section-title">Research</h2>
-      <a href="/Research/Fields/" class="section-viewall">View All →</a>
+    <div class="section-meta">
+      <span class="section-label">Research</span>
+      <a href="/Research/Fields/" class="section-link">View All →</a>
     </div>
-    <div class="research-cards">
-      <div class="research-card">
+    <div class="research-cols">
+      <div class="research-col">
         <h3>대화 시스템 &amp; 질의응답</h3>
-        <p>인간과 컴퓨터 간의 자연스러운 대화를 가능하게 하는 지능형 대화 시스템과 대규모 데이터 기반 질의응답 시스템을 연구합니다.</p>
+        <p>인간과 컴퓨터 간의 자연스러운 대화와 대규모 데이터 기반 질의응답 시스템을 연구합니다.</p>
         <ul>
           <li>오픈 도메인 대화 (Open-Domain Dialogue)</li>
           <li>목적 지향 대화 (Task-Oriented Dialogue)</li>
+          <li>페르소나 기반 대화 (Persona Dialogue)</li>
           <li>Open-Domain Question Answering</li>
         </ul>
       </div>
-      <div class="research-card">
+      <div class="research-col">
         <h3>정보 검색 &amp; 생성형 AI</h3>
-        <p>대규모 데이터로부터 정보를 효율적으로 검색하고 LLM 기반 생성형 AI 기술을 연구합니다.</p>
+        <p>대규모 데이터에서 정보를 효율적으로 검색하고 LLM 기반 생성형 AI 기술을 연구합니다.</p>
         <ul>
           <li>정보 검색 (Information Retrieval)</li>
           <li>RAG (Retrieval-Augmented Generation)</li>
           <li>sLM (소형 언어 모델)</li>
+          <li>Controllable Text Generation</li>
         </ul>
       </div>
-      <div class="research-card">
+      <div class="research-col">
         <h3>텍스트 마이닝 &amp; NLP 기반 기술</h3>
-        <p>대량의 텍스트 데이터에서 유용한 패턴을 발견하고 자연어 이해를 위한 핵심 기술을 연구합니다.</p>
+        <p>대량의 텍스트 데이터에서 유용한 패턴을 발견하고 자연어 이해 핵심 기술을 연구합니다.</p>
         <ul>
           <li>텍스트 분류 · 요약 · 감성 분석</li>
           <li>형태소 · 구문 · 의미 분석</li>
-          <li>Controllable Text Generation</li>
+          <li>개체명 인식 (NER)</li>
+          <li>담화 분석 (Discourse Analysis)</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
+<hr class="section-divider">
+
 <!-- News -->
-<section class="modern-section">
+<section class="lab-section">
   <div class="container">
-    <div class="section-header">
-      <h2 class="section-title">News</h2>
-      <a href="/AboutUs/Photos/" class="section-viewall">View All →</a>
+    <div class="section-meta">
+      <span class="section-label">News</span>
+      <a href="/AboutUs/Photos/" class="section-link">View All →</a>
     </div>
     <div class="news-grid">
       <div class="news-item">
-        <img src="/assets/img/2026/02_graduation.jpg" alt="26년 2월 졸업식"/>
-        <p>2026년 2월 &nbsp;—&nbsp; 봉근 박사과정, 상원·유민 석사과정 졸업</p>
+        <img src="/assets/img/2026/02_graduation.jpg" alt="26년 2월 졸업식">
+        <p class="news-date">Feb 2026</p>
+        <p class="news-caption">봉근 박사과정, 상원·유민 석사과정 졸업</p>
       </div>
       <div class="news-item">
-        <img src="/assets/img/2025/11_emnlp.jpg" alt="EMNLP 2025"/>
-        <p>2025년 11월 &nbsp;—&nbsp; EMNLP 학회 발표</p>
+        <img src="/assets/img/2025/11_emnlp.jpg" alt="EMNLP 2025">
+        <p class="news-date">Nov 2025</p>
+        <p class="news-caption">EMNLP 학회 발표</p>
       </div>
       <div class="news-item">
-        <img src="/assets/img/2025/07_acl_chs.jpg" alt="ACL 2025"/>
-        <p>2025년 7월 &nbsp;—&nbsp; ACL 학회 발표</p>
+        <img src="/assets/img/2025/07_acl_chs.jpg" alt="ACL 2025">
+        <p class="news-date">Jul 2025</p>
+        <p class="news-caption">ACL 학회 발표</p>
       </div>
       <div class="news-item">
-        <img src="/assets/img/2025/07_professor_award.jpg" alt="학술상 수상"/>
-        <p>2025년 7월 &nbsp;—&nbsp; 고영중 교수님 한국정보과학회 학술상 수상</p>
+        <img src="/assets/img/2025/07_professor_award.jpg" alt="학술상 수상">
+        <p class="news-date">Jul 2025</p>
+        <p class="news-caption">고영중 교수님 한국정보과학회 학술상 수상</p>
       </div>
     </div>
   </div>
