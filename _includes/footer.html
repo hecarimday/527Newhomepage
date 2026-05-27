@@ -1,19 +1,16 @@
-<div class="footer">
-  <div class="container">
-    <p class="copy">© {{ 'now' | date: '%Y' }} NLP Lab, Sungkyunkwan University &nbsp;·&nbsp; 경기도 수원시 장안구 서부로 2066, 성균관대학교 N센터 4층 86401호</p>
-    <div class="footer-ext-links">
-      {% if site.social.github %}
-      <a href="{{ site.social.github }}" target="_blank">GitHub</a>
-      {% endif %}
-      {% if site.social.linkedin %}
-      <a href="{{ site.social.linkedin }}" target="_blank">LinkedIn</a>
-      {% endif %}
-      {% if site.social.email %}
-      <a href="mailto:{{ site.social.email }}">Email</a>
-      {% endif %}
-      {% if site.social.apply %}
-      <a href="{{ site.social.apply }}" target="_blank">Apply</a>
-      {% endif %}
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p class="site-footer__copy">
+      © {{ 'now' | date: '%Y' }} NLPLab, Sungkyunkwan University<br>
+      경기도 수원시 장안구 서부로 2066, N센터 4층 86401호
+    </p>
+    <div class="site-footer__links">
+      <a href="https://www.skku.edu" target="_blank">SKKU</a>
+      <a href="https://ai.skku.edu" target="_blank">SKKU AI</a>
+      {% if site.social.github %}<a href="{{ site.social.github }}" target="_blank">GitHub</a>{% endif %}
+      {% if site.social.linkedin %}<a href="{{ site.social.linkedin }}" target="_blank">LinkedIn</a>{% endif %}
+      {% if site.social.email %}<a href="mailto:{{ site.social.email }}">Email</a>{% endif %}
+      {% if site.social.apply %}<a href="{{ site.social.apply }}" target="_blank">Apply</a>{% endif %}
     </div>
   </div>
-</div>
+</footer>

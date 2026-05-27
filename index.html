@@ -4,96 +4,88 @@ title: NLPLAB
 ---
 
 <!-- Hero -->
-<section class="hero-section">
-  <div class="container">
-    <p class="hero-label">Sungkyunkwan University · AI Department</p>
-    <h1 class="hero-title">Natural Language<br>Processing Lab</h1>
-    <p class="hero-desc">
+<div class="page-wrap">
+  <section class="iis-hero">
+    <p class="iis-hero__univ">Sungkyunkwan University · Department of Artificial Intelligence</p>
+    <h1 class="iis-hero__title">Natural Language<br>Processing Lab</h1>
+    <p class="iis-hero__sub">
       대화 시스템, 질의응답, 정보 검색, 생성형 AI, 텍스트 마이닝 등 다양한 NLP 기술 연구를 통해
       AI의 접근성을 높이고 더 나은 삶을 위한 인공지능 기술 발전에 기여합니다.
     </p>
-    <div class="hero-actions">
-      <a href="/AboutUs/Introduction/" class="btn-primary">About Us</a>
-      <a href="/Publications/AllPapers/" class="btn-secondary">Publications</a>
-      <a href="{{ site.social.apply }}" target="_blank" class="btn-secondary">Join Us</a>
+    <div class="iis-hero__links">
+      <a href="/AboutUs/Introduction/" class="iis-btn iis-btn--dark">About Us</a>
+      <a href="/Publications/AllPapers/" class="iis-btn iis-btn--outline">Publications</a>
+      <a href="{{ site.social.apply }}" target="_blank" class="iis-btn iis-btn--outline">Join Us</a>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 
-<hr class="section-divider">
-
-<!-- Research -->
-<section class="lab-section">
-  <div class="container">
-    <div class="section-meta">
-      <span class="section-label">Research</span>
-      <a href="/Research/Fields/" class="section-link">View All →</a>
+<!-- OUR LAB -->
+<div class="page-wrap">
+  <section class="iis-section">
+    <div class="iis-section__head">
+      <span class="iis-section__label">Our Lab</span>
+      <a href="/Research/Fields/" class="iis-section__viewall">View All →</a>
     </div>
-    <div class="research-cols">
-      <div class="research-col">
-        <h3>대화 시스템 &amp; 질의응답</h3>
-        <p>인간과 컴퓨터 간의 자연스러운 대화와 대규모 데이터 기반 질의응답 시스템을 연구합니다.</p>
-        <ul>
-          <li>오픈 도메인 대화 (Open-Domain Dialogue)</li>
-          <li>목적 지향 대화 (Task-Oriented Dialogue)</li>
-          <li>페르소나 기반 대화 (Persona Dialogue)</li>
-          <li>Open-Domain Question Answering</li>
+    <p class="iis-lab__desc">
+      본 연구실은 자연어 처리 연구를 통해 다양한 NLP 시스템의 접근성을 높이고,
+      더 진화된 인공지능 기술로 삶의 질 향상을 목표로 합니다.
+    </p>
+    <div class="iis-lab__cols">
+      <div class="iis-lab__col">
+        <p class="iis-lab__col-title">대화 시스템 &amp; 질의응답</p>
+        <ul class="iis-lab__col-list">
+          <li>오픈 도메인 대화</li>
+          <li>목적 지향 대화</li>
+          <li>페르소나 기반 대화</li>
+          <li>Open-Domain QA</li>
         </ul>
       </div>
-      <div class="research-col">
-        <h3>정보 검색 &amp; 생성형 AI</h3>
-        <p>대규모 데이터에서 정보를 효율적으로 검색하고 LLM 기반 생성형 AI 기술을 연구합니다.</p>
-        <ul>
-          <li>정보 검색 (Information Retrieval)</li>
-          <li>RAG (Retrieval-Augmented Generation)</li>
+      <div class="iis-lab__col">
+        <p class="iis-lab__col-title">정보 검색 &amp; 생성형 AI</p>
+        <ul class="iis-lab__col-list">
+          <li>정보 검색 (IR)</li>
+          <li>RAG</li>
           <li>sLM (소형 언어 모델)</li>
           <li>Controllable Text Generation</li>
         </ul>
       </div>
-      <div class="research-col">
-        <h3>텍스트 마이닝 &amp; NLP 기반 기술</h3>
-        <p>대량의 텍스트 데이터에서 유용한 패턴을 발견하고 자연어 이해 핵심 기술을 연구합니다.</p>
-        <ul>
+      <div class="iis-lab__col">
+        <p class="iis-lab__col-title">텍스트 마이닝 &amp; NLP 기반 기술</p>
+        <ul class="iis-lab__col-list">
           <li>텍스트 분류 · 요약 · 감성 분석</li>
           <li>형태소 · 구문 · 의미 분석</li>
           <li>개체명 인식 (NER)</li>
-          <li>담화 분석 (Discourse Analysis)</li>
+          <li>담화 분석</li>
         </ul>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 
-<hr class="section-divider">
-
-<!-- News -->
-<section class="lab-section">
-  <div class="container">
-    <div class="section-meta">
-      <span class="section-label">News</span>
-      <a href="/AboutUs/Photos/" class="section-link">View All →</a>
+<!-- NEWS -->
+<div class="page-wrap">
+  <section class="iis-section">
+    <div class="iis-section__head">
+      <span class="iis-section__label">News</span>
+      <a href="/AboutUs/Photos/" class="iis-section__viewall">View All →</a>
     </div>
-    <div class="news-grid">
-      <div class="news-item">
+    <div class="iis-news__grid">
+      <div class="iis-news__item">
         <img src="/assets/img/2026/02_graduation.jpg" alt="26년 2월 졸업식">
-        <p class="news-date">Feb 2026</p>
-        <p class="news-caption">봉근 박사과정, 상원·유민 석사과정 졸업</p>
+        <p class="iis-news__date">Feb 2026</p>
+        <p class="iis-news__caption">봉근 박사과정, 상원·유민 석사과정 졸업</p>
       </div>
-      <div class="news-item">
+      <div class="iis-news__item">
         <img src="/assets/img/2025/11_emnlp.jpg" alt="EMNLP 2025">
-        <p class="news-date">Nov 2025</p>
-        <p class="news-caption">EMNLP 학회 발표</p>
+        <p class="iis-news__date">Nov 2025</p>
+        <p class="iis-news__caption">EMNLP 학회 발표</p>
       </div>
-      <div class="news-item">
+      <div class="iis-news__item">
         <img src="/assets/img/2025/07_acl_chs.jpg" alt="ACL 2025">
-        <p class="news-date">Jul 2025</p>
-        <p class="news-caption">ACL 학회 발표</p>
-      </div>
-      <div class="news-item">
-        <img src="/assets/img/2025/07_professor_award.jpg" alt="학술상 수상">
-        <p class="news-date">Jul 2025</p>
-        <p class="news-caption">고영중 교수님 한국정보과학회 학술상 수상</p>
+        <p class="iis-news__date">Jul 2025</p>
+        <p class="iis-news__caption">ACL 학회 발표</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
