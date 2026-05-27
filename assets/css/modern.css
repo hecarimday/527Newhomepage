@@ -1,0 +1,311 @@
+/* ============================================================
+   Modern Redesign — NLP Lab SKKU
+   Clean minimal style inspired by iislab.skku.edu
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+/* ---- Base ---- */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  background: #fff;
+  color: #111;
+  margin: 0;
+  line-height: 1.6;
+}
+
+a { color: #111; text-decoration: none; }
+a:hover { color: #444; }
+
+/* ---- Header Override ---- */
+.header {
+  background: #fff !important;
+  color: #111 !important;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 0 !important;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .top-nav { display: none !important; }
+
+.header .container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  max-width: 1140px !important;
+  margin: 0 auto !important;
+  padding: 0 32px !important;
+  width: 100% !important;
+  height: 64px;
+}
+
+.header h1.logo {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  line-height: 1 !important;
+}
+
+.header h1.logo a {
+  color: #111 !important;
+  text-decoration: none !important;
+  letter-spacing: 0.01em;
+}
+
+.header h1.logo img {
+  height: 2rem !important;
+  width: auto !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+/* Nav items — horizontal, clean */
+.nav-collapse { float: none !important; }
+
+.nav-collapse ul {
+  display: flex !important;
+  gap: 32px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  background: transparent !important;
+}
+
+.nav-collapse ul li {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+.nav-collapse ul li a {
+  color: #444 !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  letter-spacing: 0.01em !important;
+  background: transparent !important;
+  padding: 0 !important;
+  transition: color 0.15s;
+}
+
+.nav-collapse ul li a:hover,
+.nav-collapse ul li.current a {
+  color: #111 !important;
+  background: transparent !important;
+}
+
+.nav-collapse ul li.mobile-only-link { display: none !important; }
+
+.nav-toggle {
+  background-color: #111 !important;
+  color: #fff !important;
+}
+
+/* ---- Content area ---- */
+.content {
+  background: #fff !important;
+  padding: 0 !important;
+}
+
+.content > .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ---- Hero Section ---- */
+.hero-section {
+  padding: 80px 0 72px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.hero-section h1.hero-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 20px;
+  color: #111;
+  letter-spacing: -0.02em;
+}
+
+.hero-section p.hero-desc {
+  font-size: 1rem;
+  color: #555;
+  max-width: 640px;
+  line-height: 1.75;
+  margin: 0 0 36px;
+}
+
+.hero-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-links a {
+  font-size: 0.875rem;
+  color: #111;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 500;
+}
+
+.hero-links a:hover { color: #555; }
+
+/* ---- Section commons ---- */
+.modern-section {
+  padding: 64px 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.modern-section:last-child { border-bottom: none; }
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #111;
+  margin: 0;
+}
+
+.section-viewall {
+  font-size: 0.82rem;
+  color: #777;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.section-viewall:hover { color: #111; }
+
+/* ---- Research Cards ---- */
+.research-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.research-card {
+  padding: 28px 24px;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+.research-card:hover { border-color: #aaa; }
+
+.research-card h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: #111;
+}
+
+.research-card p {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.65;
+  margin: 0 0 16px;
+}
+
+.research-card ul {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.research-card ul li {
+  font-size: 0.8rem;
+  color: #888;
+  line-height: 1.7;
+}
+
+/* ---- News Grid ---- */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.news-item img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #e4e4e4;
+  display: block;
+}
+
+.news-item p {
+  font-size: 0.83rem;
+  color: #666;
+  margin: 10px 0 0;
+  line-height: 1.5;
+}
+
+/* ---- Footer Override ---- */
+.footer {
+  background: #f7f7f7 !important;
+  border-top: 1px solid #e4e4e4 !important;
+  padding: 0 !important;
+}
+
+.footer .container {
+  max-width: 1140px !important;
+  margin: 0 auto !important;
+  padding: 28px 32px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+}
+
+.footer .copy {
+  font-size: 0.8rem !important;
+  color: #999 !important;
+  margin: 0 !important;
+}
+
+.footer-ext-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-ext-links a {
+  font-size: 0.8rem;
+  color: #999;
+  text-decoration: none;
+}
+
+.footer-ext-links a:hover { color: #333; }
+
+/* ---- Hide old page title on index ---- */
+.home-page .pageTitle { display: none; }
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .research-cards { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+  .research-cards { grid-template-columns: 1fr; }
+  .news-grid { grid-template-columns: 1fr; }
+  .hero-section h1.hero-title { font-size: 1.7rem; }
+  .header .container { padding: 0 16px !important; }
+  .content > .container { padding: 0 16px; }
+  .footer .container { padding: 20px 16px !important; flex-direction: column; align-items: flex-start !important; }
+}

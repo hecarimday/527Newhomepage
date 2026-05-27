@@ -1,10 +1,19 @@
-<style>
-@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
-.jg{font-family: 'Jeju Gothic', sans-serif;}
-</style>
 <div class="footer">
-   <div class="container jg">
-      <p class = "copy">경기도 수원시 장안구 서부로 2066, 성균관대학교 자연과학캠퍼스 N센터 4층 86401호</p>
-   </div>
-</div><!-- end .footer -->
-
+  <div class="container">
+    <p class="copy">© {{ 'now' | date: '%Y' }} NLP Lab, Sungkyunkwan University &nbsp;·&nbsp; 경기도 수원시 장안구 서부로 2066, 성균관대학교 N센터 4층 86401호</p>
+    <div class="footer-ext-links">
+      {% if site.social.github %}
+      <a href="{{ site.social.github }}" target="_blank">GitHub</a>
+      {% endif %}
+      {% if site.social.linkedin %}
+      <a href="{{ site.social.linkedin }}" target="_blank">LinkedIn</a>
+      {% endif %}
+      {% if site.social.email %}
+      <a href="mailto:{{ site.social.email }}">Email</a>
+      {% endif %}
+      {% if site.social.apply %}
+      <a href="{{ site.social.apply }}" target="_blank">Apply</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
